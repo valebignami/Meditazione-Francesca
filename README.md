@@ -116,6 +116,16 @@ Esempi di link da usare nei vari canali:
 Vale anche `utm_source` / `utm_campaign`. Il cambio lingua conserva i parametri.
 Per i QR code: generare un QR per ogni link con un qualsiasi generatore gratuito.
 
+## Anteprima WhatsApp / social
+
+Le immagini di anteprima sono `assets/og-it.jpg` e `assets/og-en.jpg` (1200x630).
+I meta tag `og:image` e `og:url` nelle 4 pagine puntano a indirizzi assoluti
+su `https://valebignami.github.io/Meditazione-Francesca/`. **Quando le pagine
+si spostano sul sito di Francesca, sostituire quell'indirizzo con quello
+definitivo** (cerca-e-sostituisci in tutti i file .html). WhatsApp tiene in
+cache l'anteprima di un link per giorni: per vedere la nuova, condividere il
+link con un parametro diverso, ad esempio `?v=2`.
+
 ## Consenso e privacy
 
 - La casella di consenso non è pre-spuntata ed è obbligatoria.
