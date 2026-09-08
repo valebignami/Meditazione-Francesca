@@ -101,7 +101,7 @@ form.sent + .thanks{display:block}
 
 /* about + soft exit */
 .about{display:flex;gap:16px;align-items:flex-start;margin:34px 0 10px}
-.about img{width:96px;height:96px;object-fit:cover;object-position:center top;flex:none;background:#fff;padding:5px;border-radius:4px;box-shadow:0 10px 24px -14px rgba(44,31,42,.45);transform:rotate(-2.5deg)}
+.about img{width:104px;height:104px;object-fit:cover;object-position:55% 22%;flex:none;background:#fff;padding:5px;border-radius:4px;box-shadow:0 10px 24px -14px rgba(44,31,42,.45);transform:rotate(-2.5deg)}
 .about p{font-size:.95rem;color:var(--text);margin:0}
 .about strong{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:1.2rem;color:var(--ink)}
 .next{margin:28px 0 0;padding-top:22px;border-top:1px solid rgba(44,31,42,.14);font-size:.95rem;color:var(--text)}
