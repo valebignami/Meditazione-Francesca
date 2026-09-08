@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Soft circle">
+  <defs><radialGradient id="g" cx="50%" cy="45%" r="55%"><stop offset="0" stop-color="#ffffff"/><stop offset=".65" stop-color="#BFD6CC"/><stop offset="1" stop-color="#EDF1EE"/></radialGradient></defs>
+  <rect width="400" height="400" fill="#EDF1EE"/><circle cx="200" cy="200" r="150" fill="url(#g)"/>
+</svg>

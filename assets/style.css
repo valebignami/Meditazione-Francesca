@@ -1,0 +1,109 @@
+/* Before You React - stile allineato a francesca-camozzi.it */
+:root{
+  --bg:#DDE6DD;          /* salvia chiaro del sito */
+  --paper:#FBFAF6;       /* card */
+  --ink:#2C1F2A;         /* prugna scuro: titoli */
+  --text:#413840;        /* testo corrente */
+  --muted:#625862;
+  --line:rgba(44,31,42,.09);
+  --periwinkle:#8590CA;  /* accento principale del sito */
+  --sage:#859578;
+  --green:#567258;       /* bottone verde "Join the Village" */
+  --coral:#CD6456;
+  --yellow:#F8B341;
+  --lavender:#D9DDF2;
+  --focus:#F8B341;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--bg);color:var(--text);
+  font-family:Manrope,system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:16px;line-height:1.6;letter-spacing:-.005em;
+}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:300;color:var(--ink);line-height:1.05;margin:0 0 .45em;letter-spacing:-.02em}
+h1{font-size:clamp(2.6rem,10vw,3.9rem)}
+h1 em{font-style:italic;color:var(--periwinkle);font-weight:300}
+h2{font-size:clamp(1.8rem,6vw,2.3rem)}
+p{margin:0 0 1em}
+a{color:var(--periwinkle)}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+
+.wrap{max-width:600px;margin:0 auto;padding:0 22px 64px}
+
+/* top bar, come l'header del sito */
+.top{display:flex;justify-content:space-between;align-items:center;padding:18px 0 6px;font-size:.95rem}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:"Cormorant Garamond",Georgia,serif;font-size:1.35rem;font-weight:400}
+.brand em{font-style:italic;font-weight:300}
+.dots{display:inline-flex;gap:3px}
+.dots i{width:6px;height:6px;border-radius:50%;display:block}
+.dots i:nth-child(1){background:var(--coral)}
+.dots i:nth-child(2){background:var(--green)}
+.dots i:nth-child(3){background:var(--periwinkle)}
+.dots i:nth-child(4){background:var(--yellow)}
+.lang{display:flex;gap:4px}
+.lang a{text-decoration:none;padding:6px 10px;border-radius:999px;color:var(--muted);font-size:.72rem;letter-spacing:.12em;font-weight:500}
+.lang a[aria-current="page"]{background:rgba(255,255,255,.6);color:var(--ink)}
+
+/* hero */
+.hero{text-align:center;padding:26px 0 10px}
+.eyebrow{display:inline-block;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--text);background:rgba(238,243,238,.84);border:1px solid var(--line);border-radius:999px;padding:6px 14px;margin-bottom:22px}
+.breath{
+  width:min(52vw,190px);aspect-ratio:1;margin:0 auto 24px;border-radius:50%;
+  background:radial-gradient(circle at 50% 45%,#FBFAF6 0%,var(--lavender) 58%,transparent 71%);
+  display:grid;place-items:center;
+  animation:breathe 8s ease-in-out infinite;
+}
+.breath span{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.25rem;color:var(--periwinkle);font-style:italic}
+@keyframes breathe{0%,100%{transform:scale(.88)}50%{transform:scale(1.08)}}
+@media (prefers-reduced-motion:reduce){.breath{animation:none}}
+.hero .sub{font-size:1.05rem;color:var(--text);max-width:36ch;margin:0 auto 16px}
+.facts{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:0 0 6px;padding:0;list-style:none}
+.facts li{font-size:.8rem;color:var(--text);background:rgba(255,255,255,.55);border:1px solid var(--line);border-radius:999px;padding:5px 12px}
+
+/* signup card, come le card del sito */
+.card{background:var(--paper);border-radius:26px;padding:28px 24px;margin:28px 0;
+  box-shadow:0 40px 82px -46px rgba(44,31,42,.26),inset 0 0 0 1px rgba(44,31,42,.06)}
+.card h2{margin-bottom:.3em}
+.field{margin:0 0 14px}
+label{display:block;font-weight:500;font-size:.9rem;margin-bottom:6px;color:var(--ink)}
+input[type=text],input[type=email]{
+  width:100%;font:inherit;font-weight:500;padding:13px 18px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink)
+}
+input:focus{border-color:var(--periwinkle)}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:.88rem;color:var(--text);margin:8px 0 20px}
+.consent input{margin-top:4px;width:18px;height:18px;flex:none;accent-color:var(--green)}
+.btn{
+  display:block;width:100%;font:inherit;font-weight:500;font-size:.95rem;
+  padding:16px 28px;border:1px solid var(--periwinkle);border-radius:100px;background:var(--periwinkle);color:#FFFDF7;cursor:pointer;text-align:center;text-decoration:none
+}
+.btn:hover{background:#7280bf;border-color:#7280bf}
+.btn.green{background:var(--green);border-color:var(--green)}
+.btn.green:hover{background:#4a6350;border-color:#4a6350}
+.btn.secondary{background:transparent;color:var(--green);border-color:var(--green)}
+.btn.secondary:hover{background:rgba(86,114,88,.08)}
+.privacy{font-size:.82rem;color:var(--muted);margin:14px 0 0}
+.privacy a{color:var(--muted)}
+.thanks{display:none}
+form.sent{display:none}
+form.sent + .thanks{display:block}
+.thanks p{margin-bottom:1em}
+
+/* about + soft exit */
+.about{display:flex;gap:16px;align-items:flex-start;margin:34px 0 10px}
+.about img{width:72px;height:72px;border-radius:50%;object-fit:cover;flex:none;background:var(--lavender)}
+.about p{font-size:.95rem;color:var(--text);margin:0}
+.about strong{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:1.2rem;color:var(--ink)}
+.next{margin:28px 0 0;padding-top:22px;border-top:1px solid rgba(44,31,42,.14);font-size:.95rem;color:var(--text)}
+.next a{color:var(--green)}
+footer{font-size:.78rem;color:var(--muted);margin-top:40px}
+footer a{color:inherit}
+
+/* listening page */
+.player{background:var(--paper);border-radius:26px;padding:28px 24px;margin:22px 0;
+  box-shadow:0 40px 82px -46px rgba(44,31,42,.26),inset 0 0 0 1px rgba(44,31,42,.06)}
+audio{width:100%;margin:10px 0 18px}
+.tips{font-size:.95rem;color:var(--text);padding-left:18px}
+.tips li{margin-bottom:.4em}
+
+.note{font-size:.85rem;color:var(--muted)}

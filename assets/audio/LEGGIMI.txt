@@ -1,0 +1,6 @@
+Metti qui i due file audio con questi nomi esatti:
+
+  before-you-react-en.mp3
+  prima-di-reagire-it.mp3
+
+Sono i nomi usati da listen-en.html e listen-it.html.

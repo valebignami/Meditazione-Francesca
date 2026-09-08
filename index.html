@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Before You React - a free 6-minute pause for overloaded parents</title>
+<meta name="description" content="A free 6-minute guided meditation for parents, by Francesca Camozzi. Available in English and Italian.">
+<meta property="og:title" content="Before You React - a 6-minute pause for overloaded parents">
+<meta property="og:description" content="A free guided meditation to create a pause before you react. In English and Italian.">
+<meta property="og:image" content="assets/cover.svg">
+<link rel="alternate" hreflang="it" href="it.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="top" aria-label="Language">
+    <a class="brand" data-link="home" href="#"><span class="dots"><i></i><i></i><i></i><i></i></span>Francesca <em>Camozzi</em></a>
+    <div class="lang">
+      <a href="index.html" aria-current="page" lang="en">EN</a>
+      <a href="it.html" lang="it">IT</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <span class="eyebrow">Free meditation for parents</span>
+    <div class="breath" aria-hidden="true"><span>breathe</span></div>
+    <h1>Before you react.<br><em>A pause of six minutes.</em></h1>
+    <p class="sub">A free guided meditation for overloaded parents, in Francesca's voice.</p>
+    <ul class="facts">
+      <li>6 minutes</li>
+      <li>Free</li>
+      <li>English or Italian</li>
+    </ul>
+  </header>
+
+  <section class="intro">
+    <p>For the moment when everyone needs something at once and you can feel yourself about to snap. This short guided practice, in Francesca's voice, helps you settle, come back to yourself and choose how to respond instead of reacting.</p>
+    <p>Listen in the car before pick-up, in the bathroom with the door closed, or in bed before the day starts. No experience needed.</p>
+  </section>
+
+  <section class="card" id="signup-card">
+    <h2>Get the meditation</h2>
+    <p class="note">You'll receive a link to listen online and download the MP3 for personal use.</p>
+
+    <form id="signup">
+      <div class="field">
+        <label for="fname">First name</label>
+        <input id="fname" type="text" data-f="firstName" autocomplete="given-name" required>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" type="email" data-f="email" autocomplete="email" inputmode="email" required>
+      </div>
+      <label class="consent">
+        <input type="checkbox" data-f="consent" value="yes" required>
+        <span>I'd like to receive the meditation and occasional emails from Francesca about parenting, workshops and practices. You can unsubscribe at any time.</span>
+      </label>
+      <button class="btn" type="submit">Send me the meditation</button>
+      <p class="privacy">Your name and email are used only to send you the meditation and Francesca's emails. They are never shared. <a data-link="privacy" href="#">Privacy policy</a></p>
+    </form>
+
+    <div class="thanks" id="thanks">
+      <h2>Thank you</h2>
+      <p>Your meditation is on its way to your inbox. If it doesn't arrive in a few minutes, check your spam folder.</p>
+      <p>You can also listen right now:</p>
+      <a class="btn green" id="listen-link" href="listen-en.html">Listen to the meditation</a>
+    </div>
+    <iframe name="hidden_iframe" title="hidden" hidden></iframe>
+  </section>
+
+  <section class="about">
+    <img src="assets/cover.svg" alt="" width="72" height="72">
+    <p><strong>Francesca Camozzi</strong> is a coach and facilitator who works with parents and families in English and Italian. Her clients often say that her voice helps them feel calmer within minutes. This meditation is a small taste of how she works.</p>
+  </section>
+
+  <p class="next">Want more support for the everyday moments of parenting? <a data-link="forParents" href="#">See how Francesca works with parents.</a></p>
+
+  <footer>&copy; Francesca Camozzi &middot; <a data-link="privacy" href="#">Privacy policy</a></footer>
+</div>
+
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
