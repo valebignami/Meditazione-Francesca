@@ -54,6 +54,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
   display:grid;place-items:center;
   animation:breathe 6s ease-in-out infinite;
 }
+.breath svg{display:none}
 .breath span{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.25rem;color:var(--periwinkle);font-style:italic}
 @keyframes breathe{0%,100%{transform:scale(.7);opacity:.75}50%{transform:scale(1.18);opacity:1}}
 @media (prefers-reduced-motion:reduce){.breath{animation:none}}
