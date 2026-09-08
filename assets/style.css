@@ -48,17 +48,15 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
 /* hero */
 .hero{text-align:center;padding:26px 0 10px}
 .eyebrow{display:inline-block;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--text);background:rgba(238,243,238,.84);border:1px solid var(--line);border-radius:999px;padding:6px 14px;margin-bottom:22px}
-.breath{position:relative;width:min(58vw,210px);aspect-ratio:1;margin:0 auto 22px;display:grid;place-items:center;color:var(--periwinkle)}
-.breath svg{position:absolute;inset:0;width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1.3}
-.breath circle{transform-origin:100px 100px;animation:ring 6s ease-in-out infinite}
-.breath .r1{fill:rgba(217,221,242,.85);stroke:none;animation-name:core}
-.breath .r2{opacity:.55}
-.breath .r3{opacity:.28;animation-delay:.4s}
-.breath span{position:relative;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.3rem;font-style:italic;color:var(--ink);animation:word 6s ease-in-out infinite}
-@keyframes core{0%,100%{transform:scale(.72)}50%{transform:scale(1.25)}}
-@keyframes ring{0%,100%{transform:scale(.6);opacity:.15}50%{transform:scale(1.28);opacity:.7}}
-@keyframes word{0%,100%{transform:scale(.94)}50%{transform:scale(1.1)}}
-@media (prefers-reduced-motion:reduce){.breath circle,.breath span{animation:none}}
+.breath{
+  width:min(52vw,190px);aspect-ratio:1;margin:0 auto 24px;border-radius:50%;
+  background:radial-gradient(circle at 50% 45%,#FBFAF6 0%,var(--lavender) 58%,transparent 71%);
+  display:grid;place-items:center;
+  animation:breathe 6s ease-in-out infinite;
+}
+.breath span{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.25rem;color:var(--periwinkle);font-style:italic}
+@keyframes breathe{0%,100%{transform:scale(.7);opacity:.75}50%{transform:scale(1.18);opacity:1}}
+@media (prefers-reduced-motion:reduce){.breath{animation:none}}
 .hero .sub{font-size:1.05rem;color:var(--text);max-width:36ch;margin:0 auto 16px}
 .facts{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:0 0 6px;padding:0;list-style:none}
 .facts li{display:inline-flex;align-items:center;gap:6px;font-family:"Patrick Hand",cursive;font-size:1rem;letter-spacing:.02em;color:var(--ink);background:rgba(255,255,255,.55);border:1px solid var(--line);border-radius:999px;padding:4px 12px 4px 9px}
